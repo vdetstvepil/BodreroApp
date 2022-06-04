@@ -7,33 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00952E5F7BB84B058F1EB23F /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CE64001FAE5457BBA9C592B /* Jost-Italic.ttf */; };
 		00E356F31AD99517003FC87E /* CafeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CafeAppTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-CafeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CafeApp.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-CafeApp-CafeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CafeApp-CafeAppTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A10D96FAFB6F4EA28F2A07C9 /* Jost_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7776CB50C7634C31AA66DD69 /* Jost_Black.ttf */; };
-		9FDFAE91AE3345FB95A87088 /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13D28C7E90F8423899A9FF5E /* Jost-BlackItalic.ttf */; };
-		6997564280B94984AED42FEF /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 154460FCCADC41F98D36480B /* Jost-Bold.ttf */; };
-		FD58663F58D1404C8EF36D84 /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 083E1794990447049C61A683 /* Jost-BoldItalic.ttf */; };
-		CF54273BC9014B3CA342FF0F /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AACA6E67B10F47AE8E36BCCE /* Jost-ExtraBold.ttf */; };
-		BC572CC1AD79495891157E3A /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E24F1BA73C4A4BDF9E229640 /* Jost-ExtraBoldItalic.ttf */; };
-		A1C09EA4A9ED44EDB49C7E46 /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD83A991B9C742FBAB00A0DA /* Jost-ExtraLight.ttf */; };
-		911E1FF98C5F43DE97BC0100 /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82C633604984035A2982074 /* Jost-ExtraLightItalic.ttf */; };
-		00952E5F7BB84B058F1EB23F /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CE64001FAE5457BBA9C592B /* Jost-Italic.ttf */; };
 		2CDFB6A3EDB14FD094A02318 /* Jost-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C1DE29C9D994399AA363FDE /* Jost-Light.ttf */; };
-		C850445999314CDCBD87B6B0 /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86DF77259B5E4DA1961FA192 /* Jost-LightItalic.ttf */; };
-		71CFBE38FF6744CDBF56B970 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B2F4F821D64EDEBD92908B /* Jost-Medium.ttf */; };
-		54986BE4AE07460C92543E8A /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 493E2502F96C453DBD6556D3 /* Jost-MediumItalic.ttf */; };
-		F19C0A06FC614D2EA7081614 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D1D766DF7245BAB733E46B /* Jost-Regular.ttf */; };
-		B047D8CCF8D04FFF93B3E7EE /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3EEB7686F4E4ED89D4FF6EC /* Jost-SemiBold.ttf */; };
-		956F0D2E845D4CE9B73E53FB /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0124DC1CEE0E4EE1830828C6 /* Jost-SemiBoldItalic.ttf */; };
+		3CE19E748ED8F024A32562B8 /* libPods-CafeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E55195D7664A84AA502B9137 /* libPods-CafeApp.a */; };
 		44BB03304E554933B54599C8 /* Jost-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 623391605F33452C9A51324D /* Jost-Thin.ttf */; };
-		7097B880BA5A409C9A87BB5A /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD355D4CFA4467F9CCA014B /* Jost-ThinItalic.ttf */; };
-		F9E9015146F748EEAB39876B /* Jost.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98F7FE29C1504200908FF9EA /* Jost.ttf */; };
+		54986BE4AE07460C92543E8A /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 493E2502F96C453DBD6556D3 /* Jost-MediumItalic.ttf */; };
+		6997564280B94984AED42FEF /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 154460FCCADC41F98D36480B /* Jost-Bold.ttf */; };
 		6CFC96327F6D4F1C91780D45 /* Jost-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA0A8EA8A9674A55BA10AC87 /* Jost-Black.ttf */; };
+		7097B880BA5A409C9A87BB5A /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD355D4CFA4467F9CCA014B /* Jost-ThinItalic.ttf */; };
+		71CFBE38FF6744CDBF56B970 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13B2F4F821D64EDEBD92908B /* Jost-Medium.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		911E1FF98C5F43DE97BC0100 /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B82C633604984035A2982074 /* Jost-ExtraLightItalic.ttf */; };
+		956F0D2E845D4CE9B73E53FB /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0124DC1CEE0E4EE1830828C6 /* Jost-SemiBoldItalic.ttf */; };
+		9FDFAE91AE3345FB95A87088 /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13D28C7E90F8423899A9FF5E /* Jost-BlackItalic.ttf */; };
+		A1C09EA4A9ED44EDB49C7E46 /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD83A991B9C742FBAB00A0DA /* Jost-ExtraLight.ttf */; };
+		B047D8CCF8D04FFF93B3E7EE /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3EEB7686F4E4ED89D4FF6EC /* Jost-SemiBold.ttf */; };
+		BC572CC1AD79495891157E3A /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E24F1BA73C4A4BDF9E229640 /* Jost-ExtraBoldItalic.ttf */; };
+		C850445999314CDCBD87B6B0 /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86DF77259B5E4DA1961FA192 /* Jost-LightItalic.ttf */; };
+		CF54273BC9014B3CA342FF0F /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AACA6E67B10F47AE8E36BCCE /* Jost-ExtraBold.ttf */; };
+		E6F4DFE99B245031905742ED /* libPods-CafeApp-CafeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A3C1A5AC1F3ACC14118F5A /* libPods-CafeApp-CafeAppTests.a */; };
+		F19C0A06FC614D2EA7081614 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D1D766DF7245BAB733E46B /* Jost-Regular.ttf */; };
+		FD58663F58D1404C8EF36D84 /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 083E1794990447049C61A683 /* Jost-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,40 +48,40 @@
 		00E356EE1AD99517003FC87E /* CafeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CafeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeAppTests.m; sourceTree = "<group>"; };
+		0124DC1CEE0E4EE1830828C6 /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-SemiBoldItalic.ttf"; path = "../assets/fonts/Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		083E1794990447049C61A683 /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-BoldItalic.ttf"; path = "../assets/fonts/Jost-BoldItalic.ttf"; sourceTree = "<group>"; };
+		11A3C1A5AC1F3ACC14118F5A /* libPods-CafeApp-CafeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CafeApp-CafeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* CafeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = CafeApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = CafeApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CafeApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CafeApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CafeApp/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CafeApp-CafeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CafeApp-CafeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-CafeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.debug.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-CafeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.release.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-CafeApp-CafeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp-CafeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-CafeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CafeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B2F4F821D64EDEBD92908B /* Jost-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Medium.ttf"; path = "../assets/fonts/Jost-Medium.ttf"; sourceTree = "<group>"; };
+		13D28C7E90F8423899A9FF5E /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-BlackItalic.ttf"; path = "../assets/fonts/Jost-BlackItalic.ttf"; sourceTree = "<group>"; };
+		154460FCCADC41F98D36480B /* Jost-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Bold.ttf"; path = "../assets/fonts/Jost-Bold.ttf"; sourceTree = "<group>"; };
+		493E2502F96C453DBD6556D3 /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-MediumItalic.ttf"; path = "../assets/fonts/Jost-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5734D72939BE7A597639B8CF /* Pods-CafeApp-CafeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp-CafeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		623391605F33452C9A51324D /* Jost-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Thin.ttf"; path = "../assets/fonts/Jost-Thin.ttf"; sourceTree = "<group>"; };
+		6D916BD7E88608B12BE99481 /* Pods-CafeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.debug.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7776CB50C7634C31AA66DD69 /* Jost_Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Jost_Black.ttf; path = ../assets/fonts/Jost_Black.ttf; sourceTree = "<group>"; };
+		7C1DE29C9D994399AA363FDE /* Jost-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Light.ttf"; path = "../assets/fonts/Jost-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CafeApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-CafeApp-CafeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp-CafeAppTests.release.xcconfig"; path = "Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		86DF77259B5E4DA1961FA192 /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-LightItalic.ttf"; path = "../assets/fonts/Jost-LightItalic.ttf"; sourceTree = "<group>"; };
+		8CE64001FAE5457BBA9C592B /* Jost-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Italic.ttf"; path = "../assets/fonts/Jost-Italic.ttf"; sourceTree = "<group>"; };
+		98F7FE29C1504200908FF9EA /* Jost.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Jost.ttf; path = ../assets/fonts/Jost.ttf; sourceTree = "<group>"; };
+		AA0A8EA8A9674A55BA10AC87 /* Jost-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Black.ttf"; path = "../assets/fonts/Jost-Black.ttf"; sourceTree = "<group>"; };
+		AACA6E67B10F47AE8E36BCCE /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-ExtraBold.ttf"; path = "../assets/fonts/Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
+		AD83A991B9C742FBAB00A0DA /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-ExtraLight.ttf"; path = "../assets/fonts/Jost-ExtraLight.ttf"; sourceTree = "<group>"; };
+		B249A93E5B92153B4C36F6C6 /* Pods-CafeApp-CafeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp-CafeAppTests.release.xcconfig"; path = "Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3EEB7686F4E4ED89D4FF6EC /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-SemiBold.ttf"; path = "../assets/fonts/Jost-SemiBold.ttf"; sourceTree = "<group>"; };
+		B82C633604984035A2982074 /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-ExtraLightItalic.ttf"; path = "../assets/fonts/Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		C4D1D766DF7245BAB733E46B /* Jost-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-Regular.ttf"; path = "../assets/fonts/Jost-Regular.ttf"; sourceTree = "<group>"; };
+		CBD355D4CFA4467F9CCA014B /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-ThinItalic.ttf"; path = "../assets/fonts/Jost-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D1798FF9238946E201D419F6 /* Pods-CafeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeApp.release.xcconfig"; path = "Target Support Files/Pods-CafeApp/Pods-CafeApp.release.xcconfig"; sourceTree = "<group>"; };
+		E24F1BA73C4A4BDF9E229640 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Jost-ExtraBoldItalic.ttf"; path = "../assets/fonts/Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		E55195D7664A84AA502B9137 /* libPods-CafeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CafeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		7776CB50C7634C31AA66DD69 /* Jost_Black.ttf */ = {isa = PBXFileReference; name = "Jost_Black.ttf"; path = "../assets/fonts/Jost_Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		13D28C7E90F8423899A9FF5E /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Jost-BlackItalic.ttf"; path = "../assets/fonts/Jost-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		154460FCCADC41F98D36480B /* Jost-Bold.ttf */ = {isa = PBXFileReference; name = "Jost-Bold.ttf"; path = "../assets/fonts/Jost-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		083E1794990447049C61A683 /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Jost-BoldItalic.ttf"; path = "../assets/fonts/Jost-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AACA6E67B10F47AE8E36BCCE /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Jost-ExtraBold.ttf"; path = "../assets/fonts/Jost-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E24F1BA73C4A4BDF9E229640 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Jost-ExtraBoldItalic.ttf"; path = "../assets/fonts/Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AD83A991B9C742FBAB00A0DA /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Jost-ExtraLight.ttf"; path = "../assets/fonts/Jost-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B82C633604984035A2982074 /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Jost-ExtraLightItalic.ttf"; path = "../assets/fonts/Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8CE64001FAE5457BBA9C592B /* Jost-Italic.ttf */ = {isa = PBXFileReference; name = "Jost-Italic.ttf"; path = "../assets/fonts/Jost-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7C1DE29C9D994399AA363FDE /* Jost-Light.ttf */ = {isa = PBXFileReference; name = "Jost-Light.ttf"; path = "../assets/fonts/Jost-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		86DF77259B5E4DA1961FA192 /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; name = "Jost-LightItalic.ttf"; path = "../assets/fonts/Jost-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		13B2F4F821D64EDEBD92908B /* Jost-Medium.ttf */ = {isa = PBXFileReference; name = "Jost-Medium.ttf"; path = "../assets/fonts/Jost-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		493E2502F96C453DBD6556D3 /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Jost-MediumItalic.ttf"; path = "../assets/fonts/Jost-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C4D1D766DF7245BAB733E46B /* Jost-Regular.ttf */ = {isa = PBXFileReference; name = "Jost-Regular.ttf"; path = "../assets/fonts/Jost-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B3EEB7686F4E4ED89D4FF6EC /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; name = "Jost-SemiBold.ttf"; path = "../assets/fonts/Jost-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0124DC1CEE0E4EE1830828C6 /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Jost-SemiBoldItalic.ttf"; path = "../assets/fonts/Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		623391605F33452C9A51324D /* Jost-Thin.ttf */ = {isa = PBXFileReference; name = "Jost-Thin.ttf"; path = "../assets/fonts/Jost-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CBD355D4CFA4467F9CCA014B /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Jost-ThinItalic.ttf"; path = "../assets/fonts/Jost-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		98F7FE29C1504200908FF9EA /* Jost.ttf */ = {isa = PBXFileReference; name = "Jost.ttf"; path = "../assets/fonts/Jost.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AA0A8EA8A9674A55BA10AC87 /* Jost-Black.ttf */ = {isa = PBXFileReference; name = "Jost-Black.ttf"; path = "../assets/fonts/Jost-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-CafeApp-CafeAppTests.a in Frameworks */,
+				E6F4DFE99B245031905742ED /* libPods-CafeApp-CafeAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-CafeApp.a in Frameworks */,
+				3CE19E748ED8F024A32562B8 /* libPods-CafeApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-CafeApp.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-CafeApp-CafeAppTests.a */,
+				E55195D7664A84AA502B9137 /* libPods-CafeApp.a */,
+				11A3C1A5AC1F3ACC14118F5A /* libPods-CafeApp-CafeAppTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -178,19 +176,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-CafeApp.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-CafeApp.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-CafeApp-CafeAppTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-CafeApp-CafeAppTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		943A38D394084C6DADFFAF2C /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				7776CB50C7634C31AA66DD69 /* Jost_Black.ttf */,
 				13D28C7E90F8423899A9FF5E /* Jost-BlackItalic.ttf */,
@@ -215,7 +202,17 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D916BD7E88608B12BE99481 /* Pods-CafeApp.debug.xcconfig */,
+				D1798FF9238946E201D419F6 /* Pods-CafeApp.release.xcconfig */,
+				5734D72939BE7A597639B8CF /* Pods-CafeApp-CafeAppTests.debug.xcconfig */,
+				B249A93E5B92153B4C36F6C6 /* Pods-CafeApp-CafeAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -224,12 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CafeAppTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				7DE0C5880732547A83512804 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				EC8CA349887C2BDFCBA0F55F /* [CP] Embed Pods Frameworks */,
+				563A95F0ACB1B76EEE7E46FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,14 +242,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CafeApp" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				730BAD40A926896604A20666 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				14844BA39E74ABAFE50F0210 /* [CP] Embed Pods Frameworks */,
+				26CDC3A2B71034A19172B846 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,7 +310,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				A10D96FAFB6F4EA28F2A07C9 /* Jost_Black.ttf in Resources */,
 				9FDFAE91AE3345FB95A87088 /* Jost-BlackItalic.ttf in Resources */,
 				6997564280B94984AED42FEF /* Jost-Bold.ttf in Resources */,
 				FD58663F58D1404C8EF36D84 /* Jost-BoldItalic.ttf in Resources */,
@@ -331,7 +327,6 @@
 				956F0D2E845D4CE9B73E53FB /* Jost-SemiBoldItalic.ttf in Resources */,
 				44BB03304E554933B54599C8 /* Jost-Thin.ttf in Resources */,
 				7097B880BA5A409C9A87BB5A /* Jost-ThinItalic.ttf in Resources */,
-				F9E9015146F748EEAB39876B /* Jost.ttf in Resources */,
 				6CFC96327F6D4F1C91780D45 /* Jost-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +348,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		14844BA39E74ABAFE50F0210 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,29 +365,41 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		26CDC3A2B71034A19172B846 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CafeApp-CafeAppTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		563A95F0ACB1B76EEE7E46FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		730BAD40A926896604A20666 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -414,7 +421,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		7DE0C5880732547A83512804 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CafeApp-CafeAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8CA349887C2BDFCBA0F55F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -429,40 +458,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp/Pods-CafeApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CafeApp-CafeAppTests/Pods-CafeApp-CafeAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -517,7 +512,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-CafeApp-CafeAppTests.debug.xcconfig */;
+			baseConfigurationReference = 5734D72939BE7A597639B8CF /* Pods-CafeApp-CafeAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -544,7 +539,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-CafeApp-CafeAppTests.release.xcconfig */;
+			baseConfigurationReference = B249A93E5B92153B4C36F6C6 /* Pods-CafeApp-CafeAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -568,11 +563,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-CafeApp.debug.xcconfig */;
+			baseConfigurationReference = 6D916BD7E88608B12BE99481 /* Pods-CafeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RG542RGU68;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = CafeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,7 +580,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.cafeapp;
 				PRODUCT_NAME = CafeApp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -594,11 +590,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-CafeApp.release.xcconfig */;
+			baseConfigurationReference = D1798FF9238946E201D419F6 /* Pods-CafeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RG542RGU68;
 				INFOPLIST_FILE = CafeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -609,7 +606,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ak.cafeapp;
 				PRODUCT_NAME = CafeApp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

@@ -1,40 +1,38 @@
 import React, { Component } from 'react';
-import { Image, View, Button, Alert, SafeAreaView, StyleSheet, Text } from 'react-native';
+import { AppRegistry, Image, View, Button, Alert, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, Icon, StatusBar } from 'react-native';
+import { createStackNavigator } from "react-navigation-stack";
+import { createAppContainer } from "react-navigation";
 
-class App extends Component {
-  render() { 
-    return (
-      <SafeAreaView style={styles.SafeAreaView}>
-        <View style={{backgroundColor: 'yellow', flex: 3, justifyContent: 'center', alignItems: 'center'}}>
-          <Image 
-            source = {require('./images/bodrero-logo.png')} 
-            style = {{ width: 200, height: 200, resizeMode: 'contain'}}/>
-        </View>
-        <View style={{backgroundColor: 'green', flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <Text style={styles.Title}>sound</Text>
-        </View>
-        <View style={{backgroundColor: 'blue', flex: 1}}>
-  
-        </View>
-        <View style={{backgroundColor: 'blue', flex: 1}}>
-  
-        </View>
-      
-      </SafeAreaView>
-    )
+import StartScreen from './components/StartScreen.js'
+
+
+export default class App extends Component {
+  render() {
+    return <AppContainer />;
   }
 }
 
-const styles = StyleSheet.create({
-  SafeAreaView: {
-    backgroundColor: 'red',
-    flex: 1
+const AppNavigator = createStackNavigator({
+  StartScreen: {
+    screen: StartScreen
   },
-  Title: {
-    textAlign: 'center',
-    fontFamily: "Jost-SemiBold",
-    fontSize: 48,
-  }
-})
+  
+},
+  {
+    initialRouteName: "StartScreen",
+    //headerMode: 'none',
+    navigationOptions: {
+      headerVisible: false,
+    }
+}); 
 
-export default App;
+const AppContainer = createAppContainer(AppNavigator);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
