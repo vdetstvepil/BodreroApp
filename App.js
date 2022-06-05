@@ -4,7 +4,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 
 import StartScreen from './components/StartScreen.js'
-
+import AuthScreen from './components/AuthScreen.js'
 
 export default class App extends Component {
   render() {
@@ -13,14 +13,17 @@ export default class App extends Component {
 }
 
 const AppNavigator = createStackNavigator({
-  StartScreen: {
+  Start: {
     screen: StartScreen
+  },
+  Auth: {
+    screen: AuthScreen
   },
   
 },
   {
-    initialRouteName: "StartScreen",
-    //headerMode: 'none',
+    initialRouteName: "Start",
+    headerMode: 'none',
     navigationOptions: {
       headerVisible: false,
     }
