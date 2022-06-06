@@ -121,12 +121,6 @@ class HomeScreen extends Component {
         </Chip>
         </ScrollView>
       </View>
-     
-      
-
-
-
-
         <FlatList
         data={filteredData}
         renderItem={renderItem}

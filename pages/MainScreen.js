@@ -47,6 +47,15 @@ const AppButton = ({ onPress, title }) => (
 );
 
 const styles = StyleSheet.create({
+  SafeAreaView: {
+    backgroundColor: '#F7F7F7',
+    flex: 1
+  },
+  CommonView: {
+    backgroundColor: '#F7F7F7',
+    flex: 1,
+    padding: 20
+  },
   TabNavigatorOptions: {
     tabBarItemStyle: {
       height: 60,
