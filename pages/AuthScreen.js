@@ -31,7 +31,7 @@ class AuthScreen extends Component {
             <View style={ styles.RectangleBorder }>
               <Image source={require('../assets/icons/key.png')} style={{height:24, width:24,  marginLeft: 15,}} />
               <TextInput style={styles.InputPassword} placeholder="Пароль" placeholderTextColor='#897A6C'/>
-              <TouchableOpacity style={styles.ButtonGo} onPress={() => this.props.navigation.navigate('Auth')}>
+              <TouchableOpacity style={styles.ButtonGo} onPress={() => this.props.navigation.navigate('Main')}>
                 <Image source={require('../assets/icons/arrow-right.png')} style={{width:24, height:24, }} />
               </TouchableOpacity>
             </View>

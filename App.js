@@ -3,8 +3,10 @@ import { AppRegistry, Image, View, Button, Alert, SafeAreaView, StyleSheet, Text
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
 
-import StartScreen from './components/StartScreen.js'
-import AuthScreen from './components/AuthScreen.js'
+import StartScreen from './pages/StartScreen.js'
+import AuthScreen from './pages/AuthScreen.js'
+import MainScreen from './pages/MainScreen.js'
+import LocationScreen from './pages/LocationScreen.js'
 
 export default class App extends Component {
   render() {
@@ -19,6 +21,12 @@ const AppNavigator = createStackNavigator({
   Auth: {
     screen: AuthScreen
   },
+  Main: {
+    screen: MainScreen
+  },
+  Location: {
+    screen: LocationScreen
+  }
   
 },
   {

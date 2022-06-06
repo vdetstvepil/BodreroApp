@@ -5,6 +5,9 @@
  * @format
  */
 
+
+
+
 module.exports = {
   project: {
     ios: {},
@@ -18,5 +21,8 @@ module.exports = {
         inlineRequires: true,
       },
     }),
+  },
+  resolver: {
+    sourceExts: ['jsx', 'js', 'ts', 'tsx', 'cjs'],
   },
 };
