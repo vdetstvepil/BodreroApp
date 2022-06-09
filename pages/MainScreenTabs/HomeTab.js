@@ -1,15 +1,43 @@
 import React, { Component } from 'react';
 import { Image, View, Button, TextInput, SafeAreaView, StyleSheet, Text, ScrollView, TouchableOpacity, FlatList, StatusBar, KeyboardAvoidingView } from 'react-native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import { Chip } from 'react-native-paper';
 
-import { ShoppingItem } from '../components/ShoppingItem.js'
+import { firebase } from '@react-native-firebase/database';
+import database from '@react-native-firebase/database';
 
+import { ShoppingItems } from './HomeTabComponents/ShoppingItems.js';
 
-class FavoriteScreen extends Component {
+class HomeTab extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchText: '',
+      selectedButton: 'All',
+    };
+    this.selectionOnPress = this.selectionOnPress.bind(this);
+  }
+
+  selectionOnPress(userType) {
+    this.setState({ selectedButton: userType });
+}
+
   render() { 
+
     return (
-        <View></View>
+        <View style={styles.CommonView}>
+          <Text style={styles.Title}>Отличный кофе</Text>
+          <Text style={styles.Title}>Всегда и везде!</Text>
+        <View style={ styles.RectangleBorder }>
+          <Image source={require('../../assets/icons/magnifying-glass.png')} style={{height:24, width:24,  marginLeft: 15,}} />
+          <TextInput style={styles.InputSearch} placeholder="Поиск" placeholderTextColor='#928E85' 
+           onChangeText={text => this.setState({ searchText: text })}
+           value={this.state.searchText}/>
+          <TouchableOpacity style={styles.ButtonGo} >
+            <MaterialCommunityIcons name="chevron-right" color='#FFFFFF' size={24}/>
+          </TouchableOpacity>
+        </View>
+          <ShoppingItems navigation={this.props.navigation} cartGoods={this.props.cartGoods}/>
+        </View>
     )
   }
 }
@@ -74,4 +102,4 @@ const styles = StyleSheet.create({
       }
 })
 
-export default FavoriteScreen;
+export default HomeTab;

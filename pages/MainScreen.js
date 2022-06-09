@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import { Image, View, Button, TextInput, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, Icon, StatusBar, KeyboardAvoidingView } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
+import { useState } from "react";
+
 import Header from './Panels/Header.js'
 import Footer from './Panels/Footer.js'
 
 
-import FavoriteScreen from './MainScreenTabs/FavoriteScreen.js'
+import HomeTab from './MainScreenTabs/HomeTab.js'
+import CartTab from './MainScreenTabs/CartTab.js'
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
@@ -17,17 +20,19 @@ const Tab = createBottomTabNavigator();
 class MainScreen extends Component {
   render() { 
     StatusBar.setBarStyle('dark-content', true);
+
+    const cartGoods = [];
    
     return (
       <SafeAreaView style={styles.SafeAreaView} forceInset={{ top: "always", bottom: "never" }}>
         <Header navigation={this.props.navigation}></Header>
         <NavigationContainer style={{height: '100%', margin: 0}}>
           <Tab.Navigator screenOptions={styles.TabNavigatorOptions} >
-          <Tab.Screen name="Home" component={Footer} options={{
+          <Tab.Screen name="Home" children={()=>{ return(<HomeTab navigation={this.props.navigation} cartGoods={cartGoods} />)}} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="home" color={color} size={size} />)}} />
-          <Tab.Screen name="Favorite" component={Footer} options={{
+          <Tab.Screen name="Favorite" component={Footer}  options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="heart" color={color} size={size} />)}} />
-          <Tab.Screen name="Cart" component={Footer} options={{
+          <Tab.Screen name="Cart" children={()=>{ return(<CartTab navigation={this.props.navigation} />)}}options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="cart" color={color} size={size} />)}} />
           <Tab.Screen name="Support" component={Footer} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="chat" color={color} size={size} />)}} />

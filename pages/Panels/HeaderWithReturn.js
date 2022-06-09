@@ -8,7 +8,7 @@ class HeaderWithReturn extends Component {
   render() { 
     return (
       <View style={styles.NavBarView}>
-        <TouchableOpacity style={styles.ButtonLocation} onPress={() => this.props.navigation.navigate('Location')}>
+        <TouchableOpacity style={styles.ButtonLocation} onPress={() => this.props.navigation.goBack() }>
           <Image source={require('../../assets/icons/left-arrow.png')} style={{width:24, height:24, }} />
         </TouchableOpacity>
         <Image source={require('../images/bodrero-logo-dark.png')} style={{height:50, width:100, resizeMode: 'contain', }} />

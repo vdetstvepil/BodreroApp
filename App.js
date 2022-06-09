@@ -6,6 +6,8 @@ import { createAppContainer } from "react-navigation";
 import StartScreen from './pages/StartScreen.js'
 import AuthScreen from './pages/AuthScreen.js'
 import MainScreen from './pages/MainScreen.js'
+import LocationScreen from './pages/LocationScreen.js'
+import GoodScreen from './pages/GoodScreen.js'
 
 export default class App extends Component {
   render() {
@@ -22,7 +24,13 @@ const AppNavigator = createStackNavigator({
   },
   Main: {
     screen: MainScreen
-  }
+  },
+  Location: {
+    screen: LocationScreen
+  },
+  Good: {
+    screen: GoodScreen,
+  },
   
 },
   {
@@ -30,7 +38,8 @@ const AppNavigator = createStackNavigator({
     headerMode: 'none',
     navigationOptions: {
       headerVisible: false,
-    }
+    }, 
+    
 }); 
 
 const AppContainer = createAppContainer(AppNavigator);
