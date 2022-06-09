@@ -11,6 +11,8 @@ import { useState } from "react";
 
 import { Counter } from './GoodScreenComponents/Counter.js'
 
+import { useIsFocused} from '@react-navigation/native'; 
+
 
 class GoodScreen extends Component {
   render() { 
@@ -19,6 +21,8 @@ class GoodScreen extends Component {
     const counter = 0;
     console.log(params.item.key)
     console.log(params.cartGoods)
+
+ 
     
     return (
       <SafeAreaView style={styles.SafeAreaView}>
@@ -48,7 +52,7 @@ class GoodScreen extends Component {
                       <View style={{flexDirection: 'row', alignItems: 'center', width: '50%'}}>
                         <Counter counter={counter}/>
                       </View>
-                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => {params.cartGoods.push([params.item, params.item.key]); console.log(params.cartGoods); console.log(counter)}}>
+                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => {params.cartGoods.push(params.item); console.log(params.cartGoods); console.log(counter)}}>
                             <Text style={styles.HighlightText}>В корзину</Text>
                         </TouchableOpacity>
                     </View>

@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { firebase } from '@react-native-firebase/database';
 import database from '@react-native-firebase/database';
 
+
 export const ShoppingItems = ({navigation, cartGoods}) =>{
     const [goods, setGoods] = useState({});
     
@@ -43,7 +44,7 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
           <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
             <Text style={styles.Ruble}>₽</Text>
             <Text style={styles.Price}>{item.val().price}</Text>
-            <TouchableOpacity style={styles.ButtonGo} onPress={() => cartGoods.push([item, item.key])}>
+            <TouchableOpacity style={styles.ButtonGo} onPress={() => { cartGoods.push(item); }}>
              <MaterialCommunityIcons name="plus" color='#FFFFFF' size={24}/>
            </TouchableOpacity>
           </View>

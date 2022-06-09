@@ -5,23 +5,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import { firebase } from '@react-native-firebase/database';
 import database from '@react-native-firebase/database';
 
-import { ShoppingItems } from './HomeTabComponents/ShoppingItems.js';
+import { CartItems } from './CartTabComponents/CartItems.js';
 
-class CartTab extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      searchText: '',
-      selectedButton: 'All',
-    };
-    this.selectionOnPress = this.selectionOnPress.bind(this);
-  }
+import { useIsFocused} from '@react-navigation/native'; 
 
-  selectionOnPress(userType) {
-    this.setState({ selectedButton: userType });
-}
-
-  render() { 
+export function CartTab({navigation, cartGoods}) {
+  
+    useIsFocused();
     return (
         <View style={styles.CommonView}>
           <Text style={styles.Title}>Корзина</Text>
@@ -32,10 +22,8 @@ class CartTab extends Component {
           </View>
          
         
-          <ShoppingItems navigation={this.props.navigation}/>
-        </View>
-    )
-  }
+          <CartItems navigation={navigation} cartGoods={cartGoods}/>
+        </View>)
 }
 
 const styles = StyleSheet.create({

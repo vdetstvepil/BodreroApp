@@ -5,48 +5,46 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MapView from "react-native-maps";
 import { Marker } from "react-native-maps";
 
-import { useRef } from "react";
+import { useFocusEffect } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 
 import { firebase } from '@react-native-firebase/database';
 import database from '@react-native-firebase/database';
 
-export const ShoppingItems = ({navigation, cartGoods}) =>{
-    const [goods, setGoods] = useState({});
+
+
+export function CartItems ({navigation, cartGoods}) {
+    const [cartItems, setcartItems] = useState(cartGoods);
     
+    useState(() => {
+      setcartItems(cartGoods);
+    }, [cartItems]);
+
     useEffect(() => {
-    database()
-      .ref('/goods')
-      .on('value', snapshot => {
+      setcartItems(cartGoods);
+    }, [cartItems]);
 
-      let GoodsObjectArray = [];
-      snapshot.forEach( child => {
-        GoodsObjectArray.push(child);
-        console.log(child.key);
-      });
+    
 
-      setGoods(GoodsObjectArray);
-    });
-    }, []);
+    
 
     const renderItem = ({ item }) => (
         <View style={styles.Container}>
        <TouchableOpacity onPress={() => navigation.navigate('Good', { item, cartGoods })}>
         <View style={styles.Item}>
           <Image source={{uri: 'https://imagestoragebodreroapp.blob.core.windows.net/goods/' + item.key + '.png'}} 
-            style={{width: '100%', height: 150, resizeMode: 'contain', borderRadius: 20}} />
-          <View>
-            <Text style={styles.Title}>{item.val().title}</Text>
-            <Text style={styles.SubTitle}>{item.val().subtitle}</Text>
-          </View>
-          <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
-            <Text style={styles.Ruble}>₽</Text>
-            <Text style={styles.Price}>{item.val().price}</Text>
-            <TouchableOpacity style={styles.ButtonGo} onPress={() => cartGoods.push([item, item.key])}>
-             <MaterialCommunityIcons name="plus" color='#FFFFFF' size={24}/>
-           </TouchableOpacity>
-          </View>
+            style={{width: 100, height: 100, resizeMode: 'contain', borderRadius: 20, marginRight: 10}} />
+            <View>
+              <View>
+                <Text style={styles.Title}>{item.val().title}</Text>
+                <Text style={styles.SubTitle}>{item.val().subtitle}</Text>
+              </View>
+              <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                <Text style={styles.Ruble}>₽</Text>
+                <Text style={styles.Price}>{item.val().price}</Text>
+              </View>
+            </View>
         </View>
         </TouchableOpacity>
     </View>
@@ -54,8 +52,8 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
     
     return (
         <FlatList
-            data={goods}
-            numColumns={2}
+            data={cartItems}
+            numColumns={1}
             renderItem={renderItem} 
         />
     ); 
@@ -64,21 +62,22 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
 
 const styles = StyleSheet.create({
     Container: {
-      width: '50%',
+      width: '100%',
     },
     Item: {
       backgroundColor: '#FFFFFF',
       padding: 15,
       marginVertical: 3,
       marginHorizontal: 3,
-      borderRadius: 30
+      borderRadius: 30,
+      flexDirection: 'row'
     },
     Title: {
       marginTop: 5,
       color: '#352C1D',
       textAlign: 'left',
       fontFamily: 'Jost-Semibold',
-      fontSize: 28,
+      fontSize: 22,
       lineHeight: 40,
     },
     SubTitle: {
@@ -91,17 +90,17 @@ const styles = StyleSheet.create({
     },
     Ruble: {
       paddingRight: 3,
-      color: '#96928A',
+      color: '#B12882',
       textAlign: 'left',
       fontFamily: 'Jost-Semibold',
-      fontSize: 28,
+      fontSize: 22,
       lineHeight: 40,
     },
     Price: {
-      color: '#352C1D',
+      color: '#B12882',
       textAlign: 'left',
       fontFamily: 'Jost-Semibold',
-      fontSize: 28,
+      fontSize: 22,
       lineHeight: 40,
       width: '60%'
     },
