@@ -12,49 +12,73 @@ import { useEffect } from "react";
 import { firebase } from '@react-native-firebase/database';
 import database from '@react-native-firebase/database';
 
+import { SwipeItem, SwipeButtonsContainer, SwipeProvider } from 'react-native-swipe-item';
+
+import { useIsFocused} from '@react-navigation/native'; 
 
 
 export function CartItems ({navigation, cartGoods}) {
-    const [cartItems, setcartItems] = useState(cartGoods);
-    
-    useState(() => {
-      setcartItems(cartGoods);
-    }, [cartItems]);
-
-    useEffect(() => {
-      setcartItems(cartGoods);
-    }, [cartItems]);
-
     
 
-    
+    const [refreshFlatlist, setRefreshFlatList] = useState(false);
+
+    function removeFromCart(item) {
+      console.log(cartGoods);
+      var index = cartGoods.indexOf(item);
+      if (index > -1) {
+        cartGoods.splice(index, 1);
+      }
+
+      console.log("deleted");
+      console.log(cartGoods);
+      setRefreshFlatList(!refreshFlatlist)
+    }
+   
+    const rightButton = (item) =>(
+      <SwipeButtonsContainer style={ styles.RightButton}>
+           <TouchableOpacity style={ styles.RightViewButton } onPress={() => removeFromCart(item)}>
+              <View style={styles.Item}>
+                <MaterialCommunityIcons name="trash-can-outline" color='#FFFFFF' size={24}/>
+              </View>
+            </TouchableOpacity>
+      </SwipeButtonsContainer>
+  );
 
     const renderItem = ({ item }) => (
-        <View style={styles.Container}>
-       <TouchableOpacity onPress={() => navigation.navigate('Good', { item, cartGoods })}>
-        <View style={styles.Item}>
-          <Image source={{uri: 'https://imagestoragebodreroapp.blob.core.windows.net/goods/' + item.key + '.png'}} 
-            style={{width: 100, height: 100, resizeMode: 'contain', borderRadius: 20, marginRight: 10}} />
-            <View>
-              <View>
-                <Text style={styles.Title}>{item.val().title}</Text>
-                <Text style={styles.SubTitle}>{item.val().subtitle}</Text>
+      <SwipeProvider>
+            <SwipeItem style={styles.SwipeButton} swipeContainerStyle={styles.SwipeContainer} rightButtons={rightButton(item)}>
+            <TouchableOpacity onPress={() => navigation.navigate('Good', { item, cartGoods })}>
+              <View style={styles.Item}>
+                <Image source={{uri: 'https://imagestoragebodreroapp.blob.core.windows.net/goods/' + item.key + '.png'}} 
+                  style={{width: 100, height: 100, resizeMode: 'contain', borderRadius: 20, marginRight: 15}} />
+                  <View>
+                    <View>
+                      <Text style={styles.Title}>{item.val().title}</Text>
+                      <Text style={styles.SubTitle}>{item.val().subtitle}</Text>
+                    </View>
+                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                      <Text style={styles.Ruble}>₽</Text>
+                      <Text style={styles.Price}>{item.val().price}</Text>
+                    </View>
+                  </View>
               </View>
-              <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                <Text style={styles.Ruble}>₽</Text>
-                <Text style={styles.Price}>{item.val().price}</Text>
-              </View>
-            </View>
-        </View>
-        </TouchableOpacity>
-    </View>
+              </TouchableOpacity>
+            </SwipeItem>
+        </SwipeProvider>
     );
+
+    /*const renderItem = ({ item }) => (
+        <View style={styles.Container}>
+      
+    </View>
+    );*/
     
     return (
         <FlatList
-            data={cartItems}
+            data={cartGoods}
             numColumns={1}
             renderItem={renderItem} 
+            extraData={refreshFlatlist}
         />
     ); 
 }
@@ -65,12 +89,7 @@ const styles = StyleSheet.create({
       width: '100%',
     },
     Item: {
-      backgroundColor: '#FFFFFF',
-      padding: 15,
-      marginVertical: 3,
-      marginHorizontal: 3,
-      borderRadius: 30,
-      flexDirection: 'row'
+      flexDirection: 'row',
     },
     Title: {
       marginTop: 5,
@@ -104,12 +123,32 @@ const styles = StyleSheet.create({
       lineHeight: 40,
       width: '60%'
     },
-    ButtonGo: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: 40,
-      height: 40,
-      backgroundColor: '#B12882',
-      borderRadius: 30,
+    SwipeButton: {
+      width: '100%',
+      alignSelf: 'center',
+      marginVertical: 5,
+      height: 120
     },
+    SwipeContainer: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#FFFFFF',
+      paddingVertical: 5,
+      borderRadius: 20,
+      flexDirection: 'row',
+    },
+    RightButton: {
+      alignSelf: 'center', 
+      flexDirection: 'column', 
+      height: 120,
+      width: 100
+    },
+    RightViewButton: {
+      backgroundColor: '#B12882',
+      marginLeft: 10,
+      height: 120,
+      borderRadius: 20,
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
 })

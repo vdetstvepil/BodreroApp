@@ -8,21 +8,36 @@ import database from '@react-native-firebase/database';
 import { CartItems } from './CartTabComponents/CartItems.js';
 
 import { useIsFocused} from '@react-navigation/native'; 
+import { useFocusEffect } from "react";
+import { useState } from "react";
+import { useEffect } from "react";
+import { CardItems } from '../CartTabComponents/ShoppingItems.js';
+
 
 export function CartTab({navigation, cartGoods}) {
-  
+    // Эту строчку не трогать, иначе корзина ПОЛЕТИТ АААА
     useIsFocused();
+    const [cartItems, setcartItems] = useState([cartGoods]);
+    
+    useState(() => {
+      setcartItems(cartGoods);
+    }, [cartItems]);
+
+    useEffect(() => {
+      setcartItems(cartGoods);
+    }, [cartItems]);
+
     return (
         <View style={styles.CommonView}>
           <Text style={styles.Title}>Корзина</Text>
           <View style={{flexDirection:'row', flexWrap:'wrap'}}>
             <Text style={styles.SubTitle}>У вас лежит </Text>
-            <Text style={[styles.SubTitle, {color: '#B12882'}]}>6 товаров</Text>
+            <Text style={[styles.SubTitle, {color: '#B12882'}]}>{cartItems.length} товаров</Text>
             <Text style={styles.SubTitle}> в корзине </Text>
           </View>
          
         
-          <CartItems navigation={navigation} cartGoods={cartGoods}/>
+          <CartItems navigation={navigation} cartGoods={cartItems}/>
         </View>)
 }
 
