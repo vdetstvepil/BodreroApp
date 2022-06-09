@@ -15,6 +15,7 @@ import database from '@react-native-firebase/database';
 
 export const ShoppingItems = ({navigation, cartGoods}) =>{
     const [goods, setGoods] = useState({});
+    const [refreshFlatlist, setRefreshFlatList] = useState(false);
     
     useEffect(() => {
     database()
@@ -30,6 +31,11 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
       setGoods(GoodsObjectArray);
     });
     }, []);
+
+    function search(searchText) {
+
+      setRefreshFlatList(!refreshFlatlist)
+    }
 
     const renderItem = ({ item }) => (
         <View style={styles.Container}>
@@ -58,6 +64,7 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
             data={goods}
             numColumns={2}
             renderItem={renderItem} 
+            extraData={refreshFlatlist}
         />
     ); 
 }

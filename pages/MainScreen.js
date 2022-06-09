@@ -30,12 +30,8 @@ class MainScreen extends Component {
           <Tab.Navigator screenOptions={styles.TabNavigatorOptions} >
           <Tab.Screen name="Home" children={()=>{ return(<HomeTab navigation={this.props.navigation} cartGoods={cartGoods} />)}} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="home" color={color} size={size} />)}} />
-          <Tab.Screen name="Favorite" component={Footer}  options={{
-            tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="heart" color={color} size={size} />)}} />
           <Tab.Screen name="Cart" children={()=>{ return(<CartTab navigation={this.props.navigation} cartGoods={cartGoods} />)}} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="cart" color={color} size={size} />)}} />
-          <Tab.Screen name="Support" component={Footer} options={{
-            tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="chat" color={color} size={size} />), navigationOptions: {navigationOptions: () => doWhatever()}}} />
           <Tab.Screen name="Profile" component={Footer} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="account" color={color} size={size} />)}} />
           </Tab.Navigator>

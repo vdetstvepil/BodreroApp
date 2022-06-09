@@ -22,7 +22,7 @@ class GoodScreen extends Component {
     console.log(params.item.key)
     console.log(params.cartGoods)
 
- 
+    
     
     return (
       <SafeAreaView style={styles.SafeAreaView}>
@@ -52,7 +52,7 @@ class GoodScreen extends Component {
                       <View style={{flexDirection: 'row', alignItems: 'center', width: '50%'}}>
                         <Counter counter={counter}/>
                       </View>
-                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => {params.cartGoods.push(params.item); console.log(params.cartGoods); console.log(counter)}}>
+                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => {params.cartGoods.push(params.item); this.props.navigation.goBack();}}>
                             <Text style={styles.HighlightText}>В корзину</Text>
                         </TouchableOpacity>
                     </View>

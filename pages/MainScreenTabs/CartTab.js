@@ -21,22 +21,15 @@ export function CartTab({navigation, cartGoods}) {
     
     useState(() => {
       setcartItems(cartGoods);
-    }, [cartItems]);
+    }, cartItems);
 
     useEffect(() => {
       setcartItems(cartGoods);
-    }, [cartItems]);
+    }, cartItems);
 
     return (
         <View style={styles.CommonView}>
           <Text style={styles.Title}>Корзина</Text>
-          <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-            <Text style={styles.SubTitle}>У вас лежит </Text>
-            <Text style={[styles.SubTitle, {color: '#B12882'}]}>{cartItems.length} товаров</Text>
-            <Text style={styles.SubTitle}> в корзине </Text>
-          </View>
-         
-        
           <CartItems navigation={navigation} cartGoods={cartItems}/>
         </View>)
 }

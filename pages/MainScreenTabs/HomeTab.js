@@ -29,9 +29,7 @@ class HomeTab extends Component {
           <Text style={styles.Title}>Всегда и везде!</Text>
         <View style={ styles.RectangleBorder }>
           <Image source={require('../../assets/icons/magnifying-glass.png')} style={{height:24, width:24,  marginLeft: 15,}} />
-          <TextInput style={styles.InputSearch} placeholder="Поиск" placeholderTextColor='#928E85' 
-           onChangeText={text => this.setState({ searchText: text })}
-           value={this.state.searchText}/>
+          <TextInput style={styles.InputSearch} placeholder="Поиск" placeholderTextColor='#928E85' />
           <TouchableOpacity style={styles.ButtonGo} >
             <MaterialCommunityIcons name="chevron-right" color='#FFFFFF' size={24}/>
           </TouchableOpacity>
