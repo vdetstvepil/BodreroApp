@@ -34,7 +34,7 @@ export default function MapAddressItems() {
 
     const renderItem = ({ item }) => (
         <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'center', paddingRight: 10}}>
-            <TouchableOpacity style={{width: '88%'}}>
+            <TouchableOpacity style={{width: '100%'}}>
             <View>
             <Text style={styles.Header}>{item.val().title}</Text>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
@@ -51,9 +51,7 @@ export default function MapAddressItems() {
             </View>
             </View>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ButtonGo}>
-            <MaterialCommunityIcons name="map-marker-outline" color='#FFFFFF' size={24}/>
-            </TouchableOpacity>
+            
         </View>
     );
     

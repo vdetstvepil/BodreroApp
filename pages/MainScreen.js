@@ -15,6 +15,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 
+import Toast from 'react-native-toast-message';
+
 const Tab = createBottomTabNavigator();
 
 class MainScreen extends Component {
@@ -27,13 +29,12 @@ class MainScreen extends Component {
       <SafeAreaView style={styles.SafeAreaView} forceInset={{ top: "always", bottom: "never" }}>
         <Header navigation={this.props.navigation}></Header>
         <NavigationContainer style={{height: '100%', margin: 0}}>
+        <Toast />
           <Tab.Navigator screenOptions={styles.TabNavigatorOptions} >
           <Tab.Screen name="Home" children={()=>{ return(<HomeTab navigation={this.props.navigation} cartGoods={cartGoods} />)}} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="home" color={color} size={size} />)}} />
           <Tab.Screen name="Cart" children={()=>{ return(<CartTab navigation={this.props.navigation} cartGoods={cartGoods} />)}} options={{
             tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="cart" color={color} size={size} />)}} />
-          <Tab.Screen name="Profile" component={Footer} options={{
-            tabBarIcon: ({ color, size }) => (<MaterialCommunityIcons name="account" color={color} size={size} />)}} />
           </Tab.Navigator>
         </NavigationContainer>  
       </SafeAreaView>

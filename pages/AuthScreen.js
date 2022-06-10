@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
-import { Image, View, Button, TextInput, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, Icon, StatusBar, KeyboardAvoidingView } from 'react-native';
+import { Image, View, Alert, TextInput, SafeAreaView, StyleSheet, Text, TouchableHighlight, TouchableOpacity, Icon, StatusBar, KeyboardAvoidingView } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
+import Toast from 'react-native-toast-message';
 
 class AuthScreen extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { login: '', password: '' };
+  }
+
+  validation = () => {
+    if(this.state.login === '+79171234567' && this.state.password === 'admin')
+      this.props.navigation.replace('Main');
+    else
+      Alert.alert("Неверный пароль, попробуйте еще раз")
+  }
+
   render() { 
     StatusBar.setBarStyle('light-content', true);
    
     return (
       <SafeAreaView style={styles.SafeAreaView}>
-          <KeyboardAwareScrollView style={{ backgroundColor: '#212325'}} 
+          <KeyboardAwareScrollView style={{ backgroundColor: '#212325', bottom: 30}} 
           resetScrollToCoords={{ x: 0, y: 0 }} contentContainerStyle={{flex: 1}} 
           scrollEnabled={false}>
         <View style={styles.CommonView}>
-            
           <View style={{ flex: 1 }}/>
           <View style={{flex: 2, justifyContent: 'center', alignItems: 'center'}}>
             <Image source={require('./images/message-reply-text-outline.png')} style={{width: 300, resizeMode: 'contain'}}/>
@@ -26,12 +38,14 @@ class AuthScreen extends Component {
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', justifyContent: 'space-around'}}>
             <View style={ styles.RectangleBorder }>
               <Image source={require('../assets/icons/phone.png')} style={{height:24, width:24,  marginLeft: 15,}} />
-              <TextInput style={styles.InputLogin} placeholder="Номер телефона" placeholderTextColor='#897A6C'/>
+              <TextInput returnKeyType={ 'done' } keyboardType = 'phone-pad' style={styles.InputLogin} placeholder="Номер телефона" placeholderTextColor='#897A6C'
+                onChangeText={(text) => this.setState({login: text})} value={this.state.login}/>
             </View>
             <View style={ styles.RectangleBorder }>
               <Image source={require('../assets/icons/key.png')} style={{height:24, width:24,  marginLeft: 15,}} />
-              <TextInput style={styles.InputPassword} placeholder="Пароль" placeholderTextColor='#897A6C'/>
-              <TouchableOpacity style={styles.ButtonGo} onPress={() => this.props.navigation.navigate('Main')}>
+              <TextInput style={styles.InputPassword} placeholder="Пароль" secureTextEntry={true}  placeholderTextColor='#897A6C'
+                onChangeText={(text) => this.setState({password: text})} value={this.state.password}/>
+              <TouchableOpacity style={styles.ButtonGo} onPress={() => this.validation()}>
                 <Image source={require('../assets/icons/arrow-right.png')} style={{width:24, height:24, }} />
               </TouchableOpacity>
             </View>
@@ -44,12 +58,6 @@ class AuthScreen extends Component {
     )
   }
 }
-
-const AppButton = ({ onPress, title }) => (
-  <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-    <Text style={styles.appButtonText}>{title}</Text>
-  </TouchableOpacity>
-);
 
 const styles = StyleSheet.create({
   SafeAreaView: {
@@ -98,7 +106,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     fontFamily: 'Jost-Semibold',
-    fontSize: 16
+    fontSize: 16,
   },
   ButtonGo: {
     alignItems: 'center',

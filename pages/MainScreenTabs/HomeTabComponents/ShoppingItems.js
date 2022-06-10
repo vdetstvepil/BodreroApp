@@ -12,6 +12,9 @@ import { useEffect } from "react";
 import { firebase } from '@react-native-firebase/database';
 import database from '@react-native-firebase/database';
 
+import Toast from 'react-native-toast-message';
+
+
 
 export const ShoppingItems = ({navigation, cartGoods}) =>{
     const [goods, setGoods] = useState({});
@@ -50,11 +53,12 @@ export const ShoppingItems = ({navigation, cartGoods}) =>{
           <View style={{flexDirection: 'row', marginTop: 10, alignItems: 'center'}}>
             <Text style={styles.Ruble}>₽</Text>
             <Text style={styles.Price}>{item.val().price}</Text>
-            <TouchableOpacity style={styles.ButtonGo} onPress={() => { cartGoods.push(item); }}>
+            <TouchableOpacity style={styles.ButtonGo} onPress={() => { cartGoods.push(item); Toast.show({type: 'success', text1: 'Товар добавлен в корзину'});}}>
              <MaterialCommunityIcons name="plus" color='#FFFFFF' size={24}/>
            </TouchableOpacity>
           </View>
         </View>
+ 
         </TouchableOpacity>
     </View>
     );

@@ -12,7 +12,7 @@ class Header extends Component {
       </TouchableOpacity>
       <Image source={require('../images/bodrero-logo-dark.png')} style={{height:50, width:100, resizeMode: 'contain', }} />
       <TouchableOpacity style={styles.ButtonLocation}>
-        <Image source={require('../../assets/icons/notification.png')} style={{width:24, height:24, }} />
+        {/*<Image source={require('../../assets/icons/notification.png')} style={{width:24, height:24, }} />*/}
       </TouchableOpacity>
     </View>
     )

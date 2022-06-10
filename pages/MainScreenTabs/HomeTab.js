@@ -7,6 +7,8 @@ import database from '@react-native-firebase/database';
 
 import { ShoppingItems } from './HomeTabComponents/ShoppingItems.js';
 
+import Toast from 'react-native-toast-message';
+
 class HomeTab extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +26,10 @@ class HomeTab extends Component {
   render() { 
 
     return (
+      <View style={{flex: 1}}>
+      
         <View style={styles.CommonView}>
+       
           <Text style={styles.Title}>Отличный кофе</Text>
           <Text style={styles.Title}>Всегда и везде!</Text>
         <View style={ styles.RectangleBorder }>
@@ -35,6 +40,7 @@ class HomeTab extends Component {
           </TouchableOpacity>
         </View>
           <ShoppingItems navigation={this.props.navigation} cartGoods={this.props.cartGoods}/>
+        </View>
         </View>
     )
   }

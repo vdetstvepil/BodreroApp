@@ -17,7 +17,7 @@ class StartScreen extends Component {
             <Text style={styles.SubTitle}>Сеть кондитерских Франсуа Бодреро в самом центре Москвы</Text>
           </View>
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-          <TouchableOpacity style={styles.ButtonGo} onPress={() => this.props.navigation.navigate('Auth')}>
+          <TouchableOpacity style={styles.ButtonGo} onPress={() => this.props.navigation.replace('Auth')}>
             <Image source={require('../assets/icons/arrow-right.png')} />
           </TouchableOpacity>
           </View>
@@ -27,12 +27,6 @@ class StartScreen extends Component {
     )
   }
 }
-
-const AppButton = ({ onPress, title }) => (
-  <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-    <Text style={styles.appButtonText}>{title}</Text>
-  </TouchableOpacity>
-);
 
 const styles = StyleSheet.create({
   SafeAreaView: {

@@ -18,6 +18,9 @@ class CheckoutScreen extends Component {
   render() { 
     StatusBar.setBarStyle('dark-content', true);
     const { params } = this.props.navigation.state;
+    const navigation = params.navigation;
+    const cartGoods = params.cartGoods;
+
     const SumElement = ({cartGoods}) => {
         var sum = 0;
         console.log(cartGoods);
@@ -26,10 +29,10 @@ class CheckoutScreen extends Component {
 
         return  <View style={{flexDirection: 'row', marginBottom: 5}}>
             <Text style={[styles.Title, {fontSize: 24, width: '80%'}]}>Итого</Text>
-            <Text style={[styles.Title, {fontSize: 24, width: '20%', color: '#B12882'}]}>₽{sum}</Text>
+            <Text style={[styles.Title, {fontSize: 24, width: '20%', color: '#B12882', textAlign: 'right'}]}>₽{sum}</Text>
             </View>;
     }
-    console.log(params.cartGoods);
+    
     return (
       <SafeAreaView style={styles.SafeAreaView}>
         <HeaderWithReturn navigation={this.props.navigation}></HeaderWithReturn>
@@ -38,7 +41,7 @@ class CheckoutScreen extends Component {
             <Text style={[styles.Title, {fontSize: 24}]}>Адрес доставки</Text>
             <Text style={[styles.SubTitle, {fontFamily: 'Jost-Medium'}]}>Улица</Text>
             <View style={ styles.RectangleBorder }>
-              <TextInput returnKeyType="emergency-call" style={[styles.InputLogin, {textAlign: 'left', width: '100%'}]}/>
+              <TextInput returnKeyType="done" style={[styles.InputLogin, {textAlign: 'left', width: '100%'}]}/>
             </View>
             <View style={{flexDirection: 'row', marginTop: 10}}>
                 <View style={{flex: 1, paddingHorizontal: 2}}>
@@ -78,7 +81,7 @@ class CheckoutScreen extends Component {
                 <View style={[styles.CommonView]}>
                     <SumElement cartGoods={params.cartGoods}/>
                     <View style={{flexDirection: 'row', alignItems: 'center',}}>
-                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => navigation.navigate('Checkout', { navigation, cartGoods })}>
+                        <TouchableOpacity style={styles.ButtonHighlight} onPress={() => params.navigation.navigate('PaymentSuccess', { navigation, cartGoods })}>
                             <Text style={styles.HighlightText}>Оплатить заказ</Text>
                         </TouchableOpacity>
                     </View>

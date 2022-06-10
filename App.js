@@ -9,6 +9,7 @@ import MainScreen from './pages/MainScreen.js'
 import LocationScreen from './pages/LocationScreen.js'
 import GoodScreen from './pages/GoodScreen.js'
 import CheckoutScreen from './pages/CheckoutScreen.js'
+import PaymentSuccessScreen from './pages/PaymentSuccessScreen.js'
 
 export default class App extends Component {
   render() {
@@ -34,6 +35,9 @@ const AppNavigator = createStackNavigator({
   },
   Checkout: {
     screen: CheckoutScreen,
+  },
+  PaymentSuccess: {
+    screen: PaymentSuccessScreen,
   },
 },
   {

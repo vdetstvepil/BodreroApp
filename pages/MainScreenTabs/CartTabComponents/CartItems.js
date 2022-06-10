@@ -187,11 +187,11 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       width: '100%',
       height: 50,
-      backgroundColor: '#B12882',
+      backgroundColor: '#FFFFFF',
       borderRadius: 30,
     },
     HighlightText: {
-      color: '#FFFFFF',
+      color: '#B12882',
       textAlign: 'center',
       fontFamily: 'Jost-Semibold',
       fontSize: 20,
